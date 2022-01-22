@@ -1,0 +1,91 @@
+import matplotlib.pyplot as plt
+import numpy as np
+data=[]
+f= open(r"C:\Users\barto\Desktop\graphs\graph1.txt")
+graph1=[]
+temp=[]
+for line in f:
+    temp=line.split()
+    graph1.append(float(temp[6]))
+#print(graph)
+f= open(r"C:\Users\barto\Desktop\graphs\graph2.txt")
+graph2=[]
+temp=[]
+for line in f:
+    temp=line.split()
+    graph2.append(float(temp[6]))
+#print(graph)
+f= open(r"C:\Users\barto\Desktop\graphs\graph3.txt")
+graph3=[]
+temp=[]
+for line in f:
+    temp=line.split()
+    graph3.append(float(temp[6]))
+#print(graph)
+f= open(r"C:\Users\barto\Desktop\graphs\graph4.txt")
+graph4=[]
+temp=[]
+for line in f:
+    temp=line.split()
+    graph4.append(float(temp[6]))
+#print(graph)
+f= open(r"C:\Users\barto\Desktop\graphs\graph5.txt")
+graph5=[]
+temp=[]
+for line in f:
+    temp=line.split()
+    graph5.append(float(temp[6]))
+#print(graph)
+f= open(r"C:\Users\barto\Desktop\graphs\graph6.txt")
+graph6=[]
+temp=[]
+for line in f:
+    temp=line.split()
+    graph6.append(float(temp[6]))
+#print(graph)
+f= open(r"C:\Users\barto\Desktop\graphs\graph7.txt")
+graph7=[]
+temp=[]
+for line in f:
+    temp=line.split()
+    graph7.append(float(temp[6]))
+#print(graph)
+f= open(r"C:\Users\barto\Desktop\graphs\graph8.txt")
+graph8=[]
+temp=[]
+for line in f:
+    temp=line.split()
+    graph8.append(float(temp[6]))
+#print(graph)
+f= open(r"C:\Users\barto\Desktop\graphs\graph9.txt")
+graph9=[]
+temp=[]
+for line in f:
+    temp=line.split()
+    graph9.append(float(temp[6]))
+#print(graph)
+f= open(r"C:\Users\barto\Desktop\graphs\graph10.txt")
+graph10=[]
+temp=[]
+for line in f:
+    temp=line.split()
+    graph10.append(float(temp[6]))
+#print(graph)
+data.append(graph1)
+data.append(graph2)
+data.append(graph3)
+data.append(graph4)
+data.append(graph5)
+data.append(graph6)
+data.append(graph7)
+data.append(graph8)
+data.append(graph9)
+data.append(graph10)
+fig = plt.figure(figsize =(10,7))
+ax = fig.add_axes([0,0,1,1])
+#print(graph1)
+
+bp=ax.boxplot(data)
+
+plt.show()
+#print(graph1)
