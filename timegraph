@@ -1,0 +1,119 @@
+import matplotlib.pyplot as plt
+import numpy as np
+f=open(r"C:\Users\barto\Desktop\graphs\graph1.txt")
+temp=[]
+data1=[]
+time1=[]
+for line in f:
+    temp=line.split()
+    data1.append(float(temp[6]))
+for i in range(len(data1)):
+    time1.append(i)
+
+    
+f=open(r"C:\Users\barto\Desktop\graphs\graph2.txt")
+temp=[]
+data2=[]
+time2=[]
+for line in f:
+    temp=line.split()
+    data2.append(float(temp[6]))
+for i in range(len(data2)):
+    time2.append(i)
+
+f=open(r"C:\Users\barto\Desktop\graphs\graph3.txt")
+temp=[]
+data3=[]
+time3=[]
+for line in f:
+    temp=line.split()
+    data3.append(float(temp[6]))
+for i in range(len(data3)):
+    time3.append(i)
+
+f=open(r"C:\Users\barto\Desktop\graphs\graph4.txt")
+temp=[]
+data4=[]
+time4=[]
+for line in f:
+    temp=line.split()
+    data4.append(float(temp[6]))
+for i in range(len(data4)):
+    time4.append(i)
+
+f=open(r"C:\Users\barto\Desktop\graphs\graph5.txt")
+temp=[]
+data5=[]
+time5=[]
+for line in f:
+    temp=line.split()
+    data5.append(float(temp[6]))
+for i in range(len(data5)):
+    time5.append(i)
+
+f=open(r"C:\Users\barto\Desktop\graphs\graph6.txt")
+temp=[]
+data6=[]
+time6=[]
+for line in f:
+    temp=line.split()
+    data6.append(float(temp[6]))
+for i in range(len(data6)):
+    time6.append(i)
+
+f=open(r"C:\Users\barto\Desktop\graphs\graph7.txt")
+temp=[]
+data7=[]
+time7=[]
+for line in f:
+    temp=line.split()
+    data7.append(float(temp[6]))
+for i in range(len(data7)):
+    time7.append(i)
+
+f=open(r"C:\Users\barto\Desktop\graphs\graph8.txt")
+temp=[]
+data8=[]
+time8=[]
+for line in f:
+    temp=line.split()
+    data8.append(float(temp[6]))
+for i in range(len(data8)):
+    time8.append(i)
+
+f=open(r"C:\Users\barto\Desktop\graphs\graph9.txt")
+temp=[]
+data9=[]
+time9=[]
+for line in f:
+    temp=line.split()
+    data9.append(float(temp[6]))
+for i in range(len(data9)):
+    time9.append(i)
+    
+f=open(r"C:\Users\barto\Desktop\graphs\graph10.txt")
+temp=[]
+data10=[]
+time10=[]
+for line in f:
+    temp=line.split()
+    data10.append(float(temp[6]))
+for i in range(len(data10)):
+    time10.append(i)
+
+fig = plt.figure(figsize =(15,10))
+    
+plt.plot(time1,data1, label = "graph 1")
+plt.plot(time2,data2, label ="graph 2")
+plt.plot(time3,data3, label ="graph 3")
+plt.plot(time4,data4, label ="graph 4")
+plt.plot(time5,data5, label ="graph 5")
+plt.plot(time6,data6, label ="graph 6")
+plt.plot(time7,data7, label ="graph 7")
+plt.plot(time8,data8, label ="graph 8")
+plt.plot(time9,data9, label ="graph 9")
+plt.plot(time10,data10, label ="graph 10")
+
+
+plt.legend()
+plt.show()
